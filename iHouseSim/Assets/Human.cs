@@ -10,8 +10,8 @@ public class Human : MonoBehaviour
     public HumanState MYSTATE = HumanState.SIT;
     void Start()
     {
-        MoveToCHeckPoint(checkPointManager.I.KITCHEN);
-        StartCoroutine(Task());
+        //MoveToCHeckPoint(checkPointManager.I.KITCHEN);
+        //StartCoroutine(Task());
     }
 
     // Update is called once per frame

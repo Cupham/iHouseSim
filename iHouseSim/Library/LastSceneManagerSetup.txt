@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mobile Modern Interiors/Demo/iHouse.unity
+- path: Assets/Mobile Modern Interiors/Demo/iHouse_toan.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
