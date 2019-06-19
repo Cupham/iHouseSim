@@ -34,7 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-/iHouseSim/obj
-/iHouseSim/Library
-/iHouseSim/Logs
+/iHouseSim/obj/*
+/iHouseSim/Library/*
+/iHouseSim/Logs/*
 /excel/*.aaa
