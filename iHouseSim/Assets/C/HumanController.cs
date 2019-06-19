@@ -10,7 +10,7 @@ public class HumanController : MonoBehaviour
         RIG = GetComponent<Rigidbody>();
     }
 
-    float f = 10;
+    float f = 100;
     float max_speed = 6;  
     void Update()
     {

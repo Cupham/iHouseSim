@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sensor : MonoBehaviour
 {
     public int ID;
+    public Transform humanPos;
     // Start is called before the first frame update
     void Start()
     {
