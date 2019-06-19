@@ -5,16 +5,23 @@ using DG.Tweening;
 
 public class Human : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
+    public ITask CURRENT_TASK;
+    public int id;
+    public st_human ST_HUMAN;
     public HumanState MYSTATE = HumanState.SIT;
+    int CURRENT_TASK_ID = 0;
+    public void Init(int id)
+    {
+        this.id = id;
+        ST_HUMAN = st_humanTable.getst_humanByID(id);
+        GetComponent<HumanController>().enabled = false;
+
+        MoveToTask(TaskManager.I.getTask(ST_HUMAN.task[0]));
+    }
     void Start()
     {
-        //MoveToCHeckPoint(checkPointManager.I.KITCHEN);
-        //StartCoroutine(Task());
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -34,15 +41,21 @@ public class Human : MonoBehaviour
     {
         transform.DOMove(a.transform.position, 1);
     }
-    IEnumerator Task()
+ 
+    public void MoveToTask(ITask task)
     {
-        yield return new WaitForSeconds(1);
-        //while(true)
-        {
-            yield return new WaitForSeconds(3);
-            MoveToCHeckPoint(checkPointManager.I.TV);
-        }
+        CURRENT_TASK = task;
+        transform.DOMove(task.transform.position, 1);
     }
+    public void OnMoveTOTask()
+    {
+
+    }
+    public void DoTask()
+    {
+        
+    }
+
 }
 public enum HumanState 
 {

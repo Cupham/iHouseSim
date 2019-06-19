@@ -17,6 +17,6 @@ public class IDevice : MonoBehaviour
     }
     public void TurnOnMe()
     {
-        Debug.Log("turn on me");
+        //Debug.Log("turn on me");
     }
 }
