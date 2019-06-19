@@ -7,6 +7,11 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     public Transform MY_HUMAN;
     public Vector3 OFFSET = new Vector3(0, 8, -5);
+    public static CameraFollow I;
+        void Awake()
+    {
+        I = this;
+    }
     void Start()
     {
         

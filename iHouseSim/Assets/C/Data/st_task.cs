@@ -6,7 +6,10 @@ public class st_task
 public int id;
 public string Name;
 public string Activity;
-public string Start_time;
-public string End_Time;
+public int time_out;
+public int asd;
 public string Location;
+public string[] decice;// lenght=1
+public string device1;
+public string deve;
 }

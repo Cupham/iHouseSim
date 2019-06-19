@@ -52,7 +52,7 @@ public class Sensor : MonoBehaviour
     {
         if (c.gameObject.layer == HumanManager.I.MY_LAYER)
         {
-            Debug.Log("exit");
+//Debug.Log("exit");
         }
     }
     public void TurnMeOn()
