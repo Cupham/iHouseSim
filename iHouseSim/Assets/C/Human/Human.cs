@@ -21,7 +21,8 @@ public class Human : MonoBehaviour
         ST_HUMAN = st_humanTable.getst_humanByID(id);
         GetComponent<HumanController>().enabled = false;
 
-        MoveToTask(TaskManager.I.getTask(ST_HUMAN.task[0]));
+        //MoveToTask(TaskManager.I.getTask(ST_HUMAN.task[0]));
+        MoveToTask(TaskManager.I.getRandomTask());
         name = "human" + id;
 
         CameraFollow.I.MY_HUMAN = this.transform;
@@ -61,7 +62,7 @@ public class Human : MonoBehaviour
  
     public void MoveToTask(ITask task)
     {
-        Debug.Log("Try to do task: " + task.ST_TASK.Name + " on location: " + task.transform.position);
+        Debug.Log("Try to do task: " + task.ST_SCHEDULE.TaskName + " on location: " + task.transform.position);
         CURRENT_TASK = task;
         //transform.DOMove(task.transform.position, 1).OnComplete(() =>
         //{
@@ -79,13 +80,13 @@ public class Human : MonoBehaviour
     public void DoTask()
     {
         MYSTATE = HumanState.SIT;
-        StartCoroutine(TaskTimeOut(CURRENT_TASK.ST_TASK.time_out));
+        StartCoroutine(TaskTimeOut(5));
     }
     IEnumerator TaskTimeOut(float t)
     {
         while (t >= 0)
         {
-            Debug.Log("task " + CURRENT_TASK.ST_TASK.Name + " count down: " + t);
+            Debug.Log("task " + CURRENT_TASK.ST_SCHEDULE.TaskName + " count down: " + t);
             yield return new WaitForSeconds(1);
             t -= 1;
             
@@ -101,7 +102,7 @@ public class Human : MonoBehaviour
         int task_id;
         do
         {
-            task_id = Random.Range(0, st_taskTable.I.VALUE.Count);
+            task_id = Random.Range(0, st_scheduleTable.I.VALUE.Count);
         }
         while (task_id == CURRENT_TASK.ID);
         ITask task = TaskManager.I.getTask(task_id);

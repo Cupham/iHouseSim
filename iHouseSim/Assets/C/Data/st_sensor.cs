@@ -8,9 +8,10 @@ public string device;
 public string location;
 public string init_value;
 public string Type;
-public string Active;
+public string ActivationMethod;
 public string IP;
 public string EOJ;
 public string EPC;
+public string Floor;
 public string Command;
 }

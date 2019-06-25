@@ -5,7 +5,7 @@ using UnityEngine;
 public class SensorManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public List<Sensor> SENSORS;
+    public List<Sensor> SENSORS; 
     public static SensorManager I;
     public int MY_LAYER;
     

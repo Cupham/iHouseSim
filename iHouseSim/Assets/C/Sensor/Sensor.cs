@@ -55,13 +55,23 @@ public class Sensor : MonoBehaviour
 //Debug.Log("exit");
         }
     }
-    public void TurnMeOn()
+    
+
+    public void Turn(SensorState desire)
     {
         if (ST_SENSOR.Type == "AIRCONDITIONER")
         {
 
         }
         else Debug.Log("NOT SUPPORT YET : type = " + ST_SENSOR.Type); 
-
     }
+    public SensorState MYSTATE;
+}
+public enum SensorState
+{
+    ON,
+    OFF,
+    OPEN,
+    CLOSED,
+
 }

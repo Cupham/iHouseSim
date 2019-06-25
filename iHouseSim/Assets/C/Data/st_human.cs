@@ -4,6 +4,10 @@ using System.Collections.Generic;
 public class st_human  
 {
 public int id;
-public string name;
-public int[] task;// lenght=3
+public string Name;
+public string Monday;
+public string Tuesday;
+public string Wednesday;
+public string Thursday;
+public string Friday;
 }
