@@ -19,8 +19,9 @@ public class Sensor : MonoBehaviour
             if(gameObject.layer != SensorManager.I.MY_LAYER)
                 Debug.Log("ERROR: " + name + " layer not set" );
         }
-
-        Collider c = GetComponent<Collider>();
+       
+        
+         Collider c = GetComponent<Collider>();
         if(c.isTrigger != true)
             c.isTrigger = true;
     }
@@ -69,9 +70,9 @@ public class Sensor : MonoBehaviour
 }
 public enum SensorState
 {
-    ON,
-    OFF,
-    OPEN,
-    CLOSED,
+    ON=0,
+    OFF=1,
+    OPEN=2,
+    CLOSED=3,
 
 }
