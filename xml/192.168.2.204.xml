@@ -1,0 +1,60 @@
+<device>
+  <profile>
+    <updater interval="30000">
+      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
+    </updater>
+  </profile>
+  <object ceoj="03bb">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="31">192.168.2.204/03bb01/0x80</value>
+        <notify>192.168.2.204/03bb01/0x80notify</notify>
+        <block>192.168.2.204/03bb01/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="18">192.168.2.204/03bb01/0x81</value>
+        <notify>192.168.2.204/03bb01/0x81notify</notify>
+        <block>192.168.2.204/03bb01/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00004200">192.168.2.204/03bb01/0x82</value>
+        <block>192.168.2.204/03bb01/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.204/03bb01/0x88</value>
+        <notify>192.168.2.204/03bb01/0x88notify</notify>
+        <block>192.168.2.204/03bb01/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.204/03bb01/0x8A</value>
+        <block>192.168.2.204/03bb01/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="B0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="42">192.168.2.204/03bb01/0xB0</value>
+        <block>192.168.2.204/03bb01/0xB0block</block>
+      </file>
+    </property>
+    <property epc="B1" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="41">192.168.2.204/03bb01/0xB1</value>
+        <block>192.168.2.204/03bb01/0xB1block</block>
+      </file>
+    </property>
+    <property epc="B2" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="42">192.168.2.204/03bb01/0xB2</value>
+        <block>192.168.2.204/03bb01/0xB2block</block>
+      </file>
+    </property>
+  </object>
+</device>

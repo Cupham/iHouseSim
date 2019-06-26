@@ -1,0 +1,116 @@
+<device>
+  <profile>
+    <updater interval="30000">
+      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
+    </updater>
+  </profile>
+  <object ceoj="05fd">
+    <property epc="80" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="31">192.168.2.149/05fd01/0x80</value>
+        <notify>192.168.2.149/05fd01/0x80notify</notify>
+        <block>192.168.2.149/05fd01/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.149/05fd01/0x81</value>
+        <notify>192.168.2.149/05fd01/0x81notify</notify>
+        <block>192.168.2.149/05fd01/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="033c6100">192.168.2.149/05fd01/0x82</value>
+        <block>192.168.2.149/05fd01/0x82block</block>
+      </file>
+    </property>
+    <property epc="86" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="0200001b20e2">192.168.2.149/05fd01/0x86</value>
+        <block>192.168.2.149/05fd01/0x86block</block>
+      </file>
+    </property>
+    <property epc="87" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="64">192.168.2.149/05fd01/0x87</value>
+        <block>192.168.2.149/05fd01/0x87block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="41">192.168.2.149/05fd01/0x88</value>
+        <notify>192.168.2.149/05fd01/0x88notify</notify>
+        <block>192.168.2.149/05fd01/0x88block</block>
+      </file>
+    </property>
+    <property epc="89" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="03ff">192.168.2.149/05fd01/0x89</value>
+        <block>192.168.2.149/05fd01/0x89block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00001b">192.168.2.149/05fd01/0x8A</value>
+        <block>192.168.2.149/05fd01/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="8B" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000001">192.168.2.149/05fd01/0x8B</value>
+        <block>192.168.2.149/05fd01/0x8Bblock</block>
+      </file>
+    </property>
+    <property epc="8C" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="4e57444e4130312020202020">192.168.2.149/05fd01/0x8C</value>
+        <block>192.168.2.149/05fd01/0x8Cblock</block>
+      </file>
+    </property>
+    <property epc="8E" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="07dd0606">192.168.2.149/05fd01/0x8E</value>
+        <block>192.168.2.149/05fd01/0x8Eblock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="303030303030303030303030">192.168.2.149/05fd01/0xE0</value>
+        <block>192.168.2.149/05fd01/0xE0block</block>
+      </file>
+    </property>
+    <property epc="F1" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="31">192.168.2.149/05fd01/0xF1</value>
+        <block>192.168.2.149/05fd01/0xF1block</block>
+      </file>
+    </property>
+    <property epc="F2" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="64">192.168.2.149/05fd01/0xF2</value>
+        <block>192.168.2.149/05fd01/0xF2block</block>
+      </file>
+    </property>
+    <property epc="F3" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="303030303030303030303030">192.168.2.149/05fd01/0xF3</value>
+        <block>192.168.2.149/05fd01/0xF3block</block>
+      </file>
+    </property>
+    <property epc="FE" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="31">192.168.2.149/05fd01/0xFE</value>
+        <notify>192.168.2.149/05fd01/0xFEnotify</notify>
+        <block>192.168.2.149/05fd01/0xFEblock</block>
+      </file>
+    </property>
+    <property epc="FF" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.149/05fd01/0xFF</value>
+        <notify>192.168.2.149/05fd01/0xFFnotify</notify>
+        <block>192.168.2.149/05fd01/0xFFblock</block>
+      </file>
+    </property>
+  </object>
+</device>

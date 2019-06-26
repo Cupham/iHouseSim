@@ -1,0 +1,54 @@
+<device>
+  <profile>
+    <updater interval="30000">
+      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
+    </updater>
+  </profile>
+  <object ceoj="0133">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="31">92.168.2.220/03C501/0x80</value>
+        <notify>92.168.2.220/03C501/0x80notify</notify>
+        <block>92.168.2.220/03C501/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="30">92.168.2.220/03C501/0x81</value>
+        <notify>92.168.2.220/03C501/0x81notify</notify>
+        <block>92.168.2.220/03C501/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00004200">92.168.2.220/03C501/0x82</value>
+        <block>92.168.2.220/03C501/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">92.168.2.220/03C501/0x88</value>
+        <notify>92.168.2.220/03C501/0x88notify</notify>
+        <block>92.168.2.220/03C501/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">92.168.2.220/03C501/0x8A</value>
+        <block>92.168.2.220/03C501/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="B0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="42">92.168.2.220/03C501/0xB0</value>
+        <block>92.168.2.220/03C501/0xB0block</block>
+      </file>
+    </property>
+    <property epc="B2" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="41">92.168.2.220/03C501/0xB2</value>
+        <block>92.168.2.220/03C501/0xB2block</block>
+      </file>
+    </property>
+  </object>
+</device>
