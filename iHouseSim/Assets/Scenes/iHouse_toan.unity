@@ -1026,6 +1026,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &129884604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1198,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &140248461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1259,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &145792759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CURRENT_TASK: {fileID: 0}
+  EXPECTED_TASK: {fileID: 0}
   id: 0
   MYSTATE: 1
   AGENT: {fileID: 0}
@@ -1524,6 +1528,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &155358788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,6 +2265,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &206985218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2534,6 +2540,7 @@ MonoBehaviour:
   humanPos: {fileID: 1636275778}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &220473511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2601,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &221497603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3278,6 +3286,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &273604525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,7 +3298,7 @@ GameObject:
   - component: {fileID: 273604526}
   - component: {fileID: 273604527}
   m_Layer: 0
-  m_Name: Stair_2
+  m_Name: ST_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3303,7 +3312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273604525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.1, y: 2.5, z: 35.67}
+  m_LocalPosition: {x: 23.97, y: 0.7, z: 33.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1374661554}
@@ -3628,6 +3637,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &295400587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 405104, guid: fd04d9c74293a8b4784946e3e5b5d93e,
@@ -3894,6 +3904,7 @@ MonoBehaviour:
   humanPos: {fileID: 1992535387}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &315973178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,6 +4264,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &326902361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,6 +4325,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &330592808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4374,6 +4387,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &337926947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b93e6831606e4264784ab1043647e32e,
@@ -4744,6 +4758,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &386495573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4924,6 +4939,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &402242683
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,6 +5000,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &403217400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5340,6 +5357,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &424292735
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,6 +5568,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &449269815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5906,6 +5925,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &474512105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5996,6 +6016,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &484924275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6496,6 +6517,7 @@ MonoBehaviour:
   humanPos: {fileID: 1733324277}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &521114525
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,6 +7285,7 @@ MonoBehaviour:
   humanPos: {fileID: 78720367}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &564404196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7473,6 +7496,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &587697728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7863,6 +7887,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &643932207
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,6 +7950,7 @@ MonoBehaviour:
   humanPos: {fileID: 710800410}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &645388329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8479,6 +8505,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &714143280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8623,6 +8650,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &716784052
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,6 +8713,7 @@ MonoBehaviour:
   humanPos: {fileID: 1208981284}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &718500286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8844,6 +8873,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &736652525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9221,6 +9251,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &772347405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9281,6 +9312,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &779246976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9408,6 +9440,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &782182437
 GameObject:
   m_ObjectHideFlags: 0
@@ -9598,7 +9631,7 @@ GameObject:
   - component: {fileID: 793523438}
   - component: {fileID: 793523439}
   m_Layer: 0
-  m_Name: Stair_1
+  m_Name: ST_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9612,7 +9645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793523437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.67, y: 2.5, z: 24.93}
+  m_LocalPosition: {x: 64.67, y: 3.99, z: 23.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1374661554}
@@ -9845,6 +9878,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &820434619
 GameObject:
   m_ObjectHideFlags: 0
@@ -10023,6 +10057,7 @@ MonoBehaviour:
   humanPos: {fileID: 454947860}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &823249491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10185,6 +10220,7 @@ MonoBehaviour:
   humanPos: {fileID: 2134040386}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &839163911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 706520b8824b2514ba0d180ff011eafd,
@@ -10359,6 +10395,7 @@ MonoBehaviour:
   humanPos: {fileID: 2127017688}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &860119357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10738,6 +10775,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &914488200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11318,6 +11356,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1016937895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11817,6 +11856,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1032254800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12021,6 +12061,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1044879649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12306,6 +12347,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1067299501
 GameObject:
   m_ObjectHideFlags: 0
@@ -12496,6 +12538,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1074857592
 GameObject:
   m_ObjectHideFlags: 0
@@ -12558,6 +12601,7 @@ MonoBehaviour:
   humanPos: {fileID: 45646417}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1077984648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4c08d0d77db42c34fa885bf4815c2127,
@@ -13225,6 +13269,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1138614775
 GameObject:
   m_ObjectHideFlags: 0
@@ -13285,6 +13330,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1141704026
 GameObject:
   m_ObjectHideFlags: 0
@@ -14138,6 +14184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CURRENT_TASK: {fileID: 0}
+  EXPECTED_TASK: {fileID: 0}
   id: 0
   MYSTATE: 1
   AGENT: {fileID: 0}
@@ -14214,6 +14261,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1206655156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400770, guid: 58e55639953ec0347a72893186c2ee59,
@@ -14344,6 +14392,7 @@ MonoBehaviour:
   humanPos: {fileID: 1164277447}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1221307184
 GameObject:
   m_ObjectHideFlags: 0
@@ -14496,6 +14545,7 @@ MonoBehaviour:
   humanPos: {fileID: 430982711}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1226183080
 GameObject:
   m_ObjectHideFlags: 0
@@ -14556,6 +14606,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1230466882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15301,6 +15352,7 @@ MonoBehaviour:
   humanPos: {fileID: 465732439}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1317995452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15440,6 +15492,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1322381332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 45fc0cf0cae04af4f9ed4002e275f998,
@@ -15726,6 +15779,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1335089632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15893,6 +15947,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1341105866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16182,6 +16237,7 @@ MonoBehaviour:
   humanPos: {fileID: 673298515}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1354734253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16321,6 +16377,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1360681827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16448,6 +16505,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1368859518
 GameObject:
   m_ObjectHideFlags: 0
@@ -16522,6 +16580,7 @@ Transform:
   - {fileID: 82767314}
   - {fileID: 793523438}
   - {fileID: 273604526}
+  - {fileID: 1622499978}
   m_Father: {fileID: 552545100}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16537,6 +16596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f689971da75d874382f46b6d925e4d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  STAIR1: {fileID: 0}
+  STAIR2: {fileID: 0}
 --- !u!1 &1375603547
 GameObject:
   m_ObjectHideFlags: 0
@@ -16796,6 +16857,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1394768331
 GameObject:
   m_ObjectHideFlags: 0
@@ -16856,6 +16918,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1403791688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16995,6 +17058,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1408812470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6c0f074abbba304e83b77d302bcc1b5,
@@ -17251,6 +17315,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1451168716
 GameObject:
   m_ObjectHideFlags: 0
@@ -17312,6 +17377,7 @@ MonoBehaviour:
   humanPos: {fileID: 474512106}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1460793850
 GameObject:
   m_ObjectHideFlags: 0
@@ -17661,6 +17727,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1501761211
 GameObject:
   m_ObjectHideFlags: 0
@@ -17722,6 +17789,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1503050656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b93e6831606e4264784ab1043647e32e,
@@ -18207,6 +18275,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1550525395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18342,6 +18411,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1553688109
 GameObject:
   m_ObjectHideFlags: 0
@@ -18650,6 +18720,7 @@ MonoBehaviour:
   humanPos: {fileID: 177070078}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1587580309
 GameObject:
   m_ObjectHideFlags: 0
@@ -18742,6 +18813,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &1589863166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6c0f074abbba304e83b77d302bcc1b5,
@@ -18810,6 +18882,7 @@ MonoBehaviour:
   humanPos: {fileID: 352353678}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1619340390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18885,6 +18958,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1619340390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1622499977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622499978}
+  - component: {fileID: 1622499979}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622499978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622499977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 57, y: 3.11, z: 11.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1374661554}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622499979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622499977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4aa96e4f4dbfe04fbfe64e266b82308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 1001
 --- !u!1001 &1634107260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19168,6 +19285,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1653170565
 GameObject:
   m_ObjectHideFlags: 0
@@ -19230,6 +19348,7 @@ MonoBehaviour:
   humanPos: {fileID: 1460793851}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1654499037
 GameObject:
   m_ObjectHideFlags: 0
@@ -19291,6 +19410,7 @@ MonoBehaviour:
   humanPos: {fileID: 1843795241}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1661357923
 GameObject:
   m_ObjectHideFlags: 0
@@ -19605,6 +19725,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1690696814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20071,6 +20192,7 @@ MonoBehaviour:
   humanPos: {fileID: 1444074452}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1720794578
 GameObject:
   m_ObjectHideFlags: 0
@@ -20832,6 +20954,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1792393495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21937,6 +22060,7 @@ MonoBehaviour:
   humanPos: {fileID: 169795926}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1871027546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22062,6 +22186,7 @@ MonoBehaviour:
   humanPos: {fileID: 129884605}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &1892387622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e802bcda6a582524cb6c214b456859c5,
@@ -22345,6 +22470,7 @@ MonoBehaviour:
   humanPos: {fileID: 556962611}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1949200888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22461,7 +22587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c1c46ffdcdfb344b5ae50087614c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SENSORS: []
   MY_LAYER: 0
 --- !u!1 &1956471441
 GameObject:
@@ -22523,6 +22648,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &1957731248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22992,6 +23118,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &2022279148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23202,6 +23329,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!4 &2037998810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479382, guid: f8f7c7d61c767084fbb364fea82598da,
@@ -23359,6 +23487,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1001 &2066512997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23683,6 +23812,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &2102450099
 GameObject:
   m_ObjectHideFlags: 0
@@ -23743,6 +23873,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &2118841737
 GameObject:
   m_ObjectHideFlags: 0
@@ -23803,6 +23934,7 @@ MonoBehaviour:
   humanPos: {fileID: 0}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &2124114796
 GameObject:
   m_ObjectHideFlags: 0
@@ -23896,6 +24028,7 @@ MonoBehaviour:
   humanPos: {fileID: 1521689436}
   ID: 9
   LIGHT_GO: {fileID: 0}
+  MYSTATE: 0
 --- !u!1 &2127017687
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class TaskManager : MonoBehaviour
 {
     public static TaskManager I;
     public Dictionary<int,ITask> TASKS = new Dictionary<int, ITask>();
+    public ITask STAIR1;
+    public ITask STAIR2;
     void Awake()
     {
         I = this;
@@ -29,6 +31,10 @@ public class TaskManager : MonoBehaviour
             
            
         }
+
+        STAIR1 = getTask(999);
+        STAIR2 = getTask(1000);
+        if (STAIR1 == null || STAIR2 == null) Debug.Log("ERROR: STARIS ARE NULL");
     }
     void Start()
     {
@@ -42,14 +48,28 @@ public class TaskManager : MonoBehaviour
     }
     public ITask getTask(int s)
     {
+        if (!TASKS.ContainsKey(s))
+            Debug.Log("ERROR: KEY NOT FOUND key: " + s + " in scene (schedule)");
         return TASKS[s];
     }
     public ITask getRandomTask()
     {
-        return TASKS[Random.Range(0, TASKS.Count)];
+        return TASKS[1];
     }
     void HardSet()
     {
 
+    }
+    public ITask GetNextStair(ITask current)
+    {
+        if (current == STAIR1) return STAIR2;
+        if (current == STAIR2) return STAIR1;
+        return null;
+    }
+    public ITask GetStair(int level)
+    {
+        if (level == 1) return STAIR1;
+        if (level == 2) return STAIR2;
+        return null;
     }
 }

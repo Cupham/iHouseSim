@@ -9,4 +9,5 @@ public string Start_Time;
 public string End_Time;
 public int Floor;
 public string Device;
+public int stair;
 }
