@@ -11,6 +11,7 @@ public class Sensor : MonoBehaviour
     public GameObject LIGHT_GO;
     void Start()
     {
+        
         ID = name;
         ST_SENSOR = st_sensorTable.getst_sensorByID(ID);
         if(ST_SENSOR==null)
@@ -19,13 +20,23 @@ public class Sensor : MonoBehaviour
             if(gameObject.layer != SensorManager.I.MY_LAYER)
                 Debug.Log("ERROR: " + name + " layer not set" );
         }
-       
+       MYSTATE =ST_SENSOR.init_value;
         
          Collider c = GetComponent<Collider>();
         if(c.isTrigger != true)
             c.isTrigger = true;
-    }
 
+    if (ST_SENSOR.interval >0 )
+            StartCoroutine(WaitAndPrint(ST_SENSOR.interval));
+    }
+    private IEnumerator WaitAndPrint(float waitTime)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            print("WaitAndPrint " + Time.time);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -60,11 +71,16 @@ public class Sensor : MonoBehaviour
 
     public void Turn(SensorState desire)
     {
-        if (ST_SENSOR.Type == "AIRCONDITIONER")
-        {
+        if(MYSTATE == desire) {
+            Debug.Log("Nothing todo");
+        } else {
+            if (ST_SENSOR.Type == "AIRCONDITIONER"){
+                
+            }
+            else Debug.Log("NOT SUPPORT YET : type = " + ST_SENSOR.Type); 
 
         }
-        else Debug.Log("NOT SUPPORT YET : type = " + ST_SENSOR.Type); 
+        
     }
     public SensorState MYSTATE;
 }
