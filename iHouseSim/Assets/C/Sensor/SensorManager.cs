@@ -19,7 +19,7 @@ public class SensorManager : MonoBehaviour
         foreach (Sensor ss in G)
         {
             if (SENSORS.ContainsKey(ss.name))
-                Debug.Log("ERROR: duplicated key " + ss.name + " in Sensors");
+                Debug.LogWarning("ERROR: duplicated key " + ss.name + " in Sensors");
             else
                 SENSORS.Add(ss.name, ss);
         }
@@ -37,6 +37,7 @@ public class SensorManager : MonoBehaviour
     }
     public Sensor GetSensor(string id)
     {
+        if (!SENSORS.ContainsKey(id)) Debug.LogWarning("ERROR: CAN NOT FIND KEY " + id + " in sensors");
         return SENSORS[id];
     }
     

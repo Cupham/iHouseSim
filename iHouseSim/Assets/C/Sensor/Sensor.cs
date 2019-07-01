@@ -16,18 +16,18 @@ public class Sensor : MonoBehaviour
         ST_SENSOR = st_sensorTable.getst_sensorByID(ID);
         if(ST_SENSOR==null)
         {
-            Debug.Log("ERROR: CAN NOT FIND " + ID + " in st_sensor");
+            Debug.LogWarning("ERROR: CAN NOT FIND " + ID + " in st_sensor");
             if(gameObject.layer != SensorManager.I.MY_LAYER)
-                Debug.Log("ERROR: " + name + " layer not set" );
+                Debug.LogWarning("ERROR: " + name + " layer not set" );
         }
-       MYSTATE =ST_SENSOR.init_value;
+       MYSTATE =(SensorState)ST_SENSOR.init_state;
         
-         Collider c = GetComponent<Collider>();
+        Collider c = GetComponent<Collider>();
         if(c.isTrigger != true)
             c.isTrigger = true;
 
-    if (ST_SENSOR.interval >0 )
-            StartCoroutine(WaitAndPrint(ST_SENSOR.interval));
+    if (ST_SENSOR.refresh_interval > 0 )
+            StartCoroutine(WaitAndPrint(ST_SENSOR.refresh_interval));
     }
     private IEnumerator WaitAndPrint(float waitTime)
     {
@@ -57,7 +57,7 @@ public class Sensor : MonoBehaviour
             //    //if (LIGHT_GO == null) LIGHT_GO = GetComponentInChildren<Light>();
             //    if (LIGHT_GO != null) LIGHT_GO.active = !LIGHT_GO.active;
             //}
-            else Debug.Log("Trigger " + ST_SENSOR.Type);
+            //else Debug.Log("Trigger " + ST_SENSOR.Type);
         }
     }
     public void OnTriggerExit(Collider c )
@@ -90,5 +90,9 @@ public enum SensorState
     OFF=1,
     OPEN=2,
     CLOSED=3,
-
+    DETECT=4,
+    NO_DETECT=5,
+    LOCK=6,
+    UNLOCK=7,
+    DEFAULT=255,
 }

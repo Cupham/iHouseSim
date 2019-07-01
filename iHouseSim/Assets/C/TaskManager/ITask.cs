@@ -19,6 +19,6 @@ public class ITask : MonoBehaviour
     public void Init(string name)
     {
         ST_SCHEDULE = st_scheduleTable.getst_scheduleByID(ID);
-        if (ST_SCHEDULE == null) Debug.Log("ERROR: TASK " + name + " NOT EXIST IN st_task table");
+        if (ST_SCHEDULE == null) Debug.LogWarning("ERROR: TASK " + name + " NOT EXIST IN st_task table");
     }
 }

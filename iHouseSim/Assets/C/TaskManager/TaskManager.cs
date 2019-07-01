@@ -17,7 +17,7 @@ public class TaskManager : MonoBehaviour
         {
             if (g == transform) continue;
             ITask it = g.GetComponent<ITask>(); 
-            if (it == null) Debug.Log("ERROR: game object " + g.name + " was not assined any ITask class");
+            if (it == null) Debug.LogWarning("ERROR: game object " + g.name + " was not assined any ITask class");
             else
             {
                 it.Init(g.name);
@@ -26,7 +26,7 @@ public class TaskManager : MonoBehaviour
                 {
                     TASKS.Add(it.ST_SCHEDULE.id, it);
                 }
-                else Debug.Log("ERROR: task position duplicated : " + g.name + " id=" + it.ST_SCHEDULE.id );
+                else Debug.LogWarning("ERROR: task position duplicated : " + g.name + " id=" + it.ST_SCHEDULE.id );
             }
             
            
@@ -34,7 +34,7 @@ public class TaskManager : MonoBehaviour
 
         STAIR1 = getTask(999);
         STAIR2 = getTask(1000);
-        if (STAIR1 == null || STAIR2 == null) Debug.Log("ERROR: STARIS ARE NULL");
+        if (STAIR1 == null || STAIR2 == null) Debug.LogWarning("ERROR: STARIS ARE NULL");
     }
     void Start()
     {
@@ -49,7 +49,7 @@ public class TaskManager : MonoBehaviour
     public ITask getTask(int s)
     {
         if (!TASKS.ContainsKey(s))
-            Debug.Log("ERROR: KEY NOT FOUND key: " + s + " in scene (schedule)");
+            Debug.LogWarning("ERROR: KEY NOT FOUND key: " + s + " in scene (schedule)");
         return TASKS[s];
     }
     public ITask getRandomTask()

@@ -44,7 +44,7 @@ t.TaskName="Personal_Care_1";
 t.Start_Time="07:18";
 t.End_Time="07:28";
 t.Floor=2;
-t.Device="BP_24:1|A_24:1|W_24:2|CL_24:2|CL_24:3|L_24:1|A_24:0";
+t.Device="BP_24:1|A_24:1|W_24:2|L_24:1";
 t.stair=0;
 VALUE.Add(2, t);
 
@@ -64,7 +64,7 @@ t.TaskName="BreakFast";
 t.Start_Time="07:33";
 t.End_Time="08:03";
 t.Floor=1;
-t.Device="A_13:1|L_15:1|L_132:0|L_131:0|C_132:2|C_131:2|W_132:2|W_131:2";
+t.Device="A_13:1|L_15:1|L_132:0|L_131:0|C_131:2|W_132:2|W_131:2";
 t.stair=0;
 VALUE.Add(4, t);
 
@@ -104,7 +104,7 @@ t.TaskName="Dinner_1";
 t.Start_Time="19:38";
 t.End_Time="20:03";
 t.Floor=1;
-t.Device="BP_24:1|L_132:0|L_131:0|C_132:2|C_131:2|W_132:2|W_131:2";
+t.Device="BP_24:1|L_132:0|L_131:0|C_131:2|W_132:2|W_131:2";
 t.stair=0;
 VALUE.Add(8, t);
 
