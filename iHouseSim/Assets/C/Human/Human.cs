@@ -13,6 +13,7 @@ public class Human : MonoBehaviour
     public HumanState MYSTATE = HumanState.SIT;
     int CURRENT_TASK_ID = 0;
     public NavMeshAgent AGENT;
+    public DevicesScheduleofHuman DEVVICE_SHEDULE_OF_HUMAN;
 
     Vector3 destination_pos = Vector3.one*100000;
 
@@ -42,27 +43,44 @@ public class Human : MonoBehaviour
         switch(MYSTATE)
         {
             case HumanState.MOVE:
-                    if (Mathf.Sqrt((destination_pos.x - transform.position.x) * (destination_pos.x - transform.position.x)
-                        + (destination_pos.z - transform.position.z) * (destination_pos.z - transform.position.z)) < 0.5f)
-                        OnMoveTOTask();
+                Debug.DrawLine(transform.position, destination_pos, Color.green);
+                if (Mathf.Sqrt((destination_pos.x - transform.position.x) * (destination_pos.x - transform.position.x)
+                    + (destination_pos.z - transform.position.z) * (destination_pos.z - transform.position.z)) < 0.5f)
+                    OnMoveTOTask();
                 count++; 
                 if(count >= 30) 
                 {
                     count = 0;
                     if(Vector3.Distance(last_pos,transform.position) < 0.1f) 
                     {
-                        Debug.Log("ERROR: CAN NOT REACH TASK " + EXPECTED_TASK.ST_SCHEDULE.TaskName + " ON FLOOR: " + EXPECTED_TASK.ST_SCHEDULE.Floor +  "; FORCE MOVE: " + destination_pos);
-                        //
+                        Debug.LogWarning("ERROR: CAN NOT REACH TASK " + EXPECTED_TASK.ST_SCHEDULE.TaskName + " ON FLOOR: " + EXPECTED_TASK.ST_SCHEDULE.Floor +  "; FORCE MOVE: " + destination_pos);
                         AGENT.Stop();
                         transform.position = destination_pos;
-                        //AGENT.Move(destination_pos);
                         DoTask(EXPECTED_TASK);
-                        //OnMoveTOTask();
                     }
                     last_pos = transform.position;
                 }
-                
-
+                break;
+            case HumanState.MOVE_TO_SENSOR:
+                Debug.DrawLine(transform.position, destination_pos, Color.blue);
+                if (Mathf.Sqrt((destination_pos.x - transform.position.x) * (destination_pos.x - transform.position.x)
+                    + (destination_pos.z - transform.position.z) * (destination_pos.z - transform.position.z)) < 0.5f)
+                    OnMoveToSensor();
+                count++;
+                if (count >= 30)
+                {
+                    count = 0;
+                    if (Vector3.Distance(last_pos, transform.position) < 0.1f)
+                    {
+                        Debug.Log(MYSTATE + " <" + DEVVICE_SHEDULE_OF_HUMAN + "> " + name  );
+                        if (DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor() == null) Debug.LogWarning("ERROR: DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor() == null");
+                        Debug.LogWarning("ERROR: CAN NOT REACH SENSOR " + DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor().name + " ; FORCE MOVE: " + destination_pos);
+                        AGENT.Stop();
+                        transform.position = destination_pos;
+                        OnMoveToSensor();
+                    }
+                    last_pos = transform.position;
+                }
                 break;
         }
     }
@@ -111,20 +129,32 @@ public class Human : MonoBehaviour
         AGENT.SetDestination(destination_pos);
         AGENT.Resume();
     }
+    public void MoveToSensor(Sensor s)
+    {
+        Debug.Log("Trying to set sensor: " + s.name + " state to " + DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor_EXpectedvalue());
+
+        MYSTATE = HumanState.MOVE_TO_SENSOR;
+        if (s.LIGHT_GO != null)
+            destination_pos = s.LIGHT_GO.transform.position;
+        else
+        {
+            Debug.LogWarning("ERROR: LIGHT_GO of " + s.name + " was not set, Move to sensor instead");
+            destination_pos = s.transform.position;
+        }
+
+        AGENT.SetDestination(destination_pos);
+        AGENT.Resume();
+    }
     public void OnMoveTOTask()
     {
         MYSTATE = HumanState.SIT;
         AGENT.isStopped = true;
         if (CURRENT_TASK && CURRENT_TASK.ST_SCHEDULE.stair==1 )
         {
-            
             ITask  task = TaskManager.I.GetNextStair(CURRENT_TASK);
-            //transform.position = task.transform.position; 
             Teleport(task.transform.position);
-            //AGENT.Move(task.transform.position);
             Debug.Log(CURRENT_TASK.ST_SCHEDULE.TaskName);
             Debug.Log("Moved to stair: ->  " + task.transform.position);
-            
             CURRENT_TASK = null;
             MoveToTask(EXPECTED_TASK); 
         }
@@ -134,13 +164,49 @@ public class Human : MonoBehaviour
             DoTask(EXPECTED_TASK);
         }
     }
+    public void OnMoveToSensor()
+    {
+        Sensor s = DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor();
+        s.Turn(DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor_EXpectedvalue());
+        DEVVICE_SHEDULE_OF_HUMAN.OnFinishSensorTask();
+        s.MYSTATE = DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor_EXpectedvalue();
+        TryToDoDeviceShedule();
+    }
     public void DoTask(ITask task)
     {
-        Debug.Log("Begin DO Task " + task.ST_SCHEDULE.TaskName);
         CURRENT_TASK = task;
+        DEVVICE_SHEDULE_OF_HUMAN = new DevicesScheduleofHuman(task.ST_SCHEDULE);
+        if (DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor() != null)
+        {
+            TryToDoDeviceShedule();
+        }
+        else DoTaskReal(CURRENT_TASK);
+    }
+    public void DoTaskReal(ITask task)
+    {
+        Debug.Log("Begin DO Task " + task.ST_SCHEDULE.TaskName);
+        //CURRENT_TASK = task;
         MYSTATE = HumanState.SIT;
         StartCoroutine(TaskTimeOut(2));
     }
+    public void TryToDoDeviceShedule()
+    {
+        Sensor s = DEVVICE_SHEDULE_OF_HUMAN.GetCurrentSensor();
+        if (s == null)
+        {
+            //DoTaskReal(CURRENT_TASK);
+            MoveToTask(CURRENT_TASK);
+        }
+        else
+        {
+            MoveToSensor(s);
+        }
+    }
+    //public bool DoDevices(ITask task)
+    //{
+        
+    //    return true;
+    //}
     IEnumerator TaskTimeOut(float t)
     {
         while (t >= 0)
@@ -154,6 +220,7 @@ public class Human : MonoBehaviour
     }
     public void OnFinishTask()
     {
+        Debug.Log("OnFinishTask()");
         NextTask();
     }
     public void NextTask()
@@ -165,10 +232,7 @@ public class Human : MonoBehaviour
             task_id = Random.Range(0, 10);
             task = TaskManager.I.getTask(task_id);
         }
-        //if (task == null) Debug.Log("ERROR: TASK id " + task_id + " is not exist!");
-        //else
         MoveToTask(task);
-
     }
 
     public void Teleport(Vector3 p)
@@ -187,5 +251,52 @@ public class Human : MonoBehaviour
 public enum HumanState 
 {
     MOVE,
+    MOVE_TO_SENSOR,
     SIT,
+}
+
+public class DevicesScheduleofHuman
+{
+    public int ID_CURRENT_ID;
+    public List<Sensor> SENSORS = new List<Sensor>();
+    public List<SensorState> SENSORS_EXPECTED_VALUE = new List<SensorState>();
+    public DevicesScheduleofHuman(st_schedule ST_SCHEDLE)
+    {
+        SENSORS = new List<Sensor>();
+        SENSORS_EXPECTED_VALUE = new List<SensorState>();
+        string devices_s = ST_SCHEDLE.Device;
+        string[] devices_s_array = devices_s.Split('|');
+        foreach (string devices_string in devices_s_array)
+        {
+            if (devices_string.Length == 0) continue;
+            string[] parse = devices_string.Split(':');
+            if (parse.Length != 2) Debug.LogWarning("ERROR: CAN NOT PARSE " + devices_string + " on ST_SCHEDULE id = " + ST_SCHEDLE.id);
+            SensorState state_designed = (SensorState)int.Parse(parse[1]);
+            Sensor sensor = SensorManager.I.GetSensor(parse[0]);
+            if (sensor == null) Debug.LogWarning("ERROR: CAN NOT FOUND SENSOR WITH ID= " + parse[0]);
+            SENSORS.Add(sensor);
+            SENSORS_EXPECTED_VALUE.Add(state_designed);
+        }
+    }
+    public int OnFinishSensorTask()
+    {
+        ID_CURRENT_ID++;
+        if (ID_CURRENT_ID >= SENSORS.Count) return -1;
+        return ID_CURRENT_ID;
+    }
+    public Sensor GetCurrentSensor()
+    {
+        if (ID_CURRENT_ID >= SENSORS.Count) return null;
+        if(SENSORS[ID_CURRENT_ID].MYSTATE == SENSORS_EXPECTED_VALUE[ID_CURRENT_ID])
+        {
+            OnFinishSensorTask();
+            return GetCurrentSensor();
+        }
+        return SENSORS[ID_CURRENT_ID];
+    }
+    public SensorState GetCurrentSensor_EXpectedvalue()
+    {
+        if (ID_CURRENT_ID >= SENSORS.Count) return SensorState.OFF;
+        return SENSORS_EXPECTED_VALUE[ID_CURRENT_ID];
+    }
 }
