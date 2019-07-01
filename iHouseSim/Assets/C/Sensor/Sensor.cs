@@ -11,7 +11,7 @@ public class Sensor : MonoBehaviour
     public GameObject LIGHT_GO;
     void Start()
     {
-
+        
         ID = name;
         ST_SENSOR = st_sensorTable.getst_sensorByID(ID);
         if(ST_SENSOR==null)
@@ -25,8 +25,18 @@ public class Sensor : MonoBehaviour
          Collider c = GetComponent<Collider>();
         if(c.isTrigger != true)
             c.isTrigger = true;
-    }
 
+    if (ST_SENSOR.interval >0 )
+            StartCoroutine(WaitAndPrint(ST_SENSOR.interval));
+    }
+    private IEnumerator WaitAndPrint(float waitTime)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            print("WaitAndPrint " + Time.time);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
