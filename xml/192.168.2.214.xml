@@ -1,50 +1,50 @@
-<device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><device>
   <profile>
-    <updater interval="30000">
+    <updater>
       <class>humming.sample.SampleNotifyInstanceListUpdater</class>
     </updater>
   </profile>
   <object ceoj="0029">
-    <property epc="80" get="enabled" set="disabled" notify="enabled">
+    <property epc="80" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="30">192.168.2.214/002901/0x80</value>
         <notify>192.168.2.214/002901/0x80notify</notify>
         <block>192.168.2.214/002901/0x80block</block>
       </file>
     </property>
-    <property epc="81" get="enabled" set="enabled" notify="enabled">
+    <property epc="81" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="42">192.168.2.214/002901/0x81</value>
         <notify>192.168.2.214/002901/0x81notify</notify>
         <block>192.168.2.214/002901/0x81block</block>
       </file>
     </property>
-    <property epc="82" get="enabled" set="disabled" notify="disabled">
+    <property epc="82" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="00004200">192.168.2.214/002901/0x82</value>
         <block>192.168.2.214/002901/0x82block</block>
       </file>
     </property>
-    <property epc="88" get="enabled" set="disabled" notify="enabled">
+    <property epc="88" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.214/002901/0x88</value>
         <notify>192.168.2.214/002901/0x88notify</notify>
         <block>192.168.2.214/002901/0x88block</block>
       </file>
     </property>
-    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+    <property epc="8A" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000000">192.168.2.214/002901/0x8A</value>
         <block>192.168.2.214/002901/0x8Ablock</block>
       </file>
     </property>
-    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+    <property epc="E0" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="30">192.168.2.214/002901/0xE0</value>
         <block>192.168.2.214/002901/0xE0block</block>
       </file>
     </property>
-    <property epc="B1" get="enabled" set="disabled" notify="enabled">
+    <property epc="B1" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.214/002901/0xB1</value>
         <block>192.168.2.214/002901/0xB1block</block>
