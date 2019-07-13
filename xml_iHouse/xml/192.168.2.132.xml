@@ -1,0 +1,132 @@
+<device>
+  <profile>
+    <updater interval="30000">
+      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
+    </updater>
+  </profile>
+  <object ceoj="0290">
+    <property epc="80" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="31">192.168.2.132/029001/0x80</value>
+        <notify>192.168.2.132/029001/0x80notify</notify>
+        <block>192.168.2.132/029001/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.132/029001/0x81</value>
+        <notify>192.168.2.132/029001/0x81notify</notify>
+        <block>192.168.2.132/029001/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="033c6100">192.168.2.132/029001/0x82</value>
+        <block>192.168.2.132/029001/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.132/029001/0x88</value>
+        <notify>192.168.2.132/029001/0x88notify</notify>
+        <block>192.168.2.132/029001/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00001b">192.168.2.132/029001/0x8A</value>
+        <block>192.168.2.132/029001/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="8B" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000001">192.168.2.132/029001/0x8B</value>
+        <block>192.168.2.132/029001/0x8Bblock</block>
+      </file>
+    </property>
+    <property epc="8C" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="4c494748542d434f4e542020">192.168.2.132/029001/0x8C</value>
+        <block>192.168.2.132/029001/0x8Cblock</block>
+      </file>
+    </property>
+    <property epc="8E" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="07dc0605">192.168.2.132/029001/0x8E</value>
+        <block>192.168.2.132/029001/0x8Eblock</block>
+      </file>
+    </property>
+    <property epc="B0" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="64">192.168.2.132/029001/0xB0</value>
+        <block>192.168.2.132/029001/0xB0block</block>
+      </file>
+    </property>
+    <property epc="FF" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.132/029001/0xFF</value>
+        <notify>192.168.2.132/029001/0xFFnotify</notify>
+        <block>192.168.2.132/029001/0xFFblock</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0290">
+    <property epc="80" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="31">192.168.2.132/029002/0x80</value>
+        <notify>192.168.2.132/029002/0x80notify</notify>
+        <block>192.168.2.132/029002/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.132/029002/0x81</value>
+        <notify>192.168.2.132/029002/0x81notify</notify>
+        <block>192.168.2.132/029002/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="033c6100">192.168.2.132/029002/0x82</value>
+        <block>192.168.2.132/029002/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.132/029002/0x88</value>
+        <notify>192.168.2.132/029002/0x88notify</notify>
+        <block>192.168.2.132/029002/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00001b">192.168.2.132/029002/0x8A</value>
+        <block>192.168.2.132/029002/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="8B" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000001">192.168.2.132/029002/0x8B</value>
+        <block>192.168.2.132/029002/0x8Bblock</block>
+      </file>
+    </property>
+    <property epc="8C" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="4c494748542d434f4e542020">192.168.2.132/029002/0x8C</value>
+        <block>192.168.2.132/029002/0x8Cblock</block>
+      </file>
+    </property>
+    <property epc="8E" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="07dc0605">192.168.2.132/029002/0x8E</value>
+        <block>192.168.2.132/029002/0x8Eblock</block>
+      </file>
+    </property>
+    <property epc="B0" get="enabled" set="enabled" notify="disabled">
+      <file>
+        <value default="00">192.168.2.132/029002/0xB0</value>
+        <block>192.168.2.132/029002/0xB0block</block>
+      </file>
+    </property>
+  </object>
+</device>

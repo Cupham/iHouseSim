@@ -1,0 +1,663 @@
+<device>
+  <profile>
+    <updater interval="30000">
+      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
+    </updater>
+  </profile>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001101/0x80</value>
+        <notify>192.168.2.193/001101/0x80notify</notify>
+        <block>192.168.2.193/001101/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001101/0x81</value>
+        <notify>192.168.2.193/001101/0x81notify</notify>
+        <block>192.168.2.193/001101/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001101/0x82</value>
+        <block>192.168.2.193/001101/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001101/0x88</value>
+        <notify>192.168.2.193/001101/0x88notify</notify>
+        <block>192.168.2.193/001101/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001101/0x8A</value>
+        <block>192.168.2.193/001101/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00e1">192.168.2.193/001101/0xE0</value>
+        <block>192.168.2.193/001101/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001102/0x80</value>
+        <notify>192.168.2.193/001102/0x80notify</notify>
+        <block>192.168.2.193/001102/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001102/0x81</value>
+        <notify>192.168.2.193/001102/0x81notify</notify>
+        <block>192.168.2.193/001102/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001102/0x82</value>
+        <block>192.168.2.193/001102/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001102/0x88</value>
+        <notify>192.168.2.193/001102/0x88notify</notify>
+        <block>192.168.2.193/001102/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001102/0x8A</value>
+        <block>192.168.2.193/001102/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00e0">192.168.2.193/001102/0xE0</value>
+        <block>192.168.2.193/001102/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001103/0x80</value>
+        <notify>192.168.2.193/001103/0x80notify</notify>
+        <block>192.168.2.193/001103/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001103/0x81</value>
+        <notify>192.168.2.193/001103/0x81notify</notify>
+        <block>192.168.2.193/001103/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001103/0x82</value>
+        <block>192.168.2.193/001103/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001103/0x88</value>
+        <notify>192.168.2.193/001103/0x88notify</notify>
+        <block>192.168.2.193/001103/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001103/0x8A</value>
+        <block>192.168.2.193/001103/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00e4">192.168.2.193/001103/0xE0</value>
+        <block>192.168.2.193/001103/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001104/0x80</value>
+        <notify>192.168.2.193/001104/0x80notify</notify>
+        <block>192.168.2.193/001104/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001104/0x81</value>
+        <notify>192.168.2.193/001104/0x81notify</notify>
+        <block>192.168.2.193/001104/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001104/0x82</value>
+        <block>192.168.2.193/001104/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001104/0x88</value>
+        <notify>192.168.2.193/001104/0x88notify</notify>
+        <block>192.168.2.193/001104/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001104/0x8A</value>
+        <block>192.168.2.193/001104/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00f0">192.168.2.193/001104/0xE0</value>
+        <block>192.168.2.193/001104/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001105/0x80</value>
+        <notify>192.168.2.193/001105/0x80notify</notify>
+        <block>192.168.2.193/001105/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001105/0x81</value>
+        <notify>192.168.2.193/001105/0x81notify</notify>
+        <block>192.168.2.193/001105/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001105/0x82</value>
+        <block>192.168.2.193/001105/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001105/0x88</value>
+        <notify>192.168.2.193/001105/0x88notify</notify>
+        <block>192.168.2.193/001105/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001105/0x8A</value>
+        <block>192.168.2.193/001105/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00e9">192.168.2.193/001105/0xE0</value>
+        <block>192.168.2.193/001105/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001106/0x80</value>
+        <notify>192.168.2.193/001106/0x80notify</notify>
+        <block>192.168.2.193/001106/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001106/0x81</value>
+        <notify>192.168.2.193/001106/0x81notify</notify>
+        <block>192.168.2.193/001106/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001106/0x82</value>
+        <block>192.168.2.193/001106/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001106/0x88</value>
+        <notify>192.168.2.193/001106/0x88notify</notify>
+        <block>192.168.2.193/001106/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001106/0x8A</value>
+        <block>192.168.2.193/001106/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00df">192.168.2.193/001106/0xE0</value>
+        <block>192.168.2.193/001106/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001107/0x80</value>
+        <notify>192.168.2.193/001107/0x80notify</notify>
+        <block>192.168.2.193/001107/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001107/0x81</value>
+        <notify>192.168.2.193/001107/0x81notify</notify>
+        <block>192.168.2.193/001107/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001107/0x82</value>
+        <block>192.168.2.193/001107/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001107/0x88</value>
+        <notify>192.168.2.193/001107/0x88notify</notify>
+        <block>192.168.2.193/001107/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001107/0x8A</value>
+        <block>192.168.2.193/001107/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00e3">192.168.2.193/001107/0xE0</value>
+        <block>192.168.2.193/001107/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0011">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001108/0x80</value>
+        <notify>192.168.2.193/001108/0x80notify</notify>
+        <block>192.168.2.193/001108/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001108/0x81</value>
+        <notify>192.168.2.193/001108/0x81notify</notify>
+        <block>192.168.2.193/001108/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001108/0x82</value>
+        <block>192.168.2.193/001108/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001108/0x88</value>
+        <notify>192.168.2.193/001108/0x88notify</notify>
+        <block>192.168.2.193/001108/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001108/0x8A</value>
+        <block>192.168.2.193/001108/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="00ef">192.168.2.193/001108/0xE0</value>
+        <block>192.168.2.193/001108/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001201/0x80</value>
+        <notify>192.168.2.193/001201/0x80notify</notify>
+        <block>192.168.2.193/001201/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001201/0x81</value>
+        <notify>192.168.2.193/001201/0x81notify</notify>
+        <block>192.168.2.193/001201/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001201/0x82</value>
+        <block>192.168.2.193/001201/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001201/0x88</value>
+        <notify>192.168.2.193/001201/0x88notify</notify>
+        <block>192.168.2.193/001201/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001201/0x8A</value>
+        <block>192.168.2.193/001201/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2f">192.168.2.193/001201/0xE0</value>
+        <block>192.168.2.193/001201/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001202/0x80</value>
+        <notify>192.168.2.193/001202/0x80notify</notify>
+        <block>192.168.2.193/001202/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001202/0x81</value>
+        <notify>192.168.2.193/001202/0x81notify</notify>
+        <block>192.168.2.193/001202/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001202/0x82</value>
+        <block>192.168.2.193/001202/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001202/0x88</value>
+        <notify>192.168.2.193/001202/0x88notify</notify>
+        <block>192.168.2.193/001202/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001202/0x8A</value>
+        <block>192.168.2.193/001202/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2d">192.168.2.193/001202/0xE0</value>
+        <block>192.168.2.193/001202/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001203/0x80</value>
+        <notify>192.168.2.193/001203/0x80notify</notify>
+        <block>192.168.2.193/001203/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001203/0x81</value>
+        <notify>192.168.2.193/001203/0x81notify</notify>
+        <block>192.168.2.193/001203/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001203/0x82</value>
+        <block>192.168.2.193/001203/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001203/0x88</value>
+        <notify>192.168.2.193/001203/0x88notify</notify>
+        <block>192.168.2.193/001203/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001203/0x8A</value>
+        <block>192.168.2.193/001203/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2e">192.168.2.193/001203/0xE0</value>
+        <block>192.168.2.193/001203/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001204/0x80</value>
+        <notify>192.168.2.193/001204/0x80notify</notify>
+        <block>192.168.2.193/001204/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001204/0x81</value>
+        <notify>192.168.2.193/001204/0x81notify</notify>
+        <block>192.168.2.193/001204/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001204/0x82</value>
+        <block>192.168.2.193/001204/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001204/0x88</value>
+        <notify>192.168.2.193/001204/0x88notify</notify>
+        <block>192.168.2.193/001204/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001204/0x8A</value>
+        <block>192.168.2.193/001204/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2a">192.168.2.193/001204/0xE0</value>
+        <block>192.168.2.193/001204/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001205/0x80</value>
+        <notify>192.168.2.193/001205/0x80notify</notify>
+        <block>192.168.2.193/001205/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001205/0x81</value>
+        <notify>192.168.2.193/001205/0x81notify</notify>
+        <block>192.168.2.193/001205/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001205/0x82</value>
+        <block>192.168.2.193/001205/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001205/0x88</value>
+        <notify>192.168.2.193/001205/0x88notify</notify>
+        <block>192.168.2.193/001205/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001205/0x8A</value>
+        <block>192.168.2.193/001205/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2e">192.168.2.193/001205/0xE0</value>
+        <block>192.168.2.193/001205/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001206/0x80</value>
+        <notify>192.168.2.193/001206/0x80notify</notify>
+        <block>192.168.2.193/001206/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001206/0x81</value>
+        <notify>192.168.2.193/001206/0x81notify</notify>
+        <block>192.168.2.193/001206/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001206/0x82</value>
+        <block>192.168.2.193/001206/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001206/0x88</value>
+        <notify>192.168.2.193/001206/0x88notify</notify>
+        <block>192.168.2.193/001206/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001206/0x8A</value>
+        <block>192.168.2.193/001206/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2f">192.168.2.193/001206/0xE0</value>
+        <block>192.168.2.193/001206/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001207/0x80</value>
+        <notify>192.168.2.193/001207/0x80notify</notify>
+        <block>192.168.2.193/001207/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001207/0x81</value>
+        <notify>192.168.2.193/001207/0x81notify</notify>
+        <block>192.168.2.193/001207/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001207/0x82</value>
+        <block>192.168.2.193/001207/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001207/0x88</value>
+        <notify>192.168.2.193/001207/0x88notify</notify>
+        <block>192.168.2.193/001207/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001207/0x8A</value>
+        <block>192.168.2.193/001207/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2d">192.168.2.193/001207/0xE0</value>
+        <block>192.168.2.193/001207/0xE0block</block>
+      </file>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="30">192.168.2.193/001208/0x80</value>
+        <notify>192.168.2.193/001208/0x80notify</notify>
+        <block>192.168.2.193/001208/0x80block</block>
+      </file>
+    </property>
+    <property epc="81" get="enabled" set="enabled" notify="enabled">
+      <file>
+        <value default="00">192.168.2.193/001208/0x81</value>
+        <notify>192.168.2.193/001208/0x81notify</notify>
+        <block>192.168.2.193/001208/0x81block</block>
+      </file>
+    </property>
+    <property epc="82" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="032a6100">192.168.2.193/001208/0x82</value>
+        <block>192.168.2.193/001208/0x82block</block>
+      </file>
+    </property>
+    <property epc="88" get="enabled" set="disabled" notify="enabled">
+      <file>
+        <value default="42">192.168.2.193/001208/0x88</value>
+        <notify>192.168.2.193/001208/0x88notify</notify>
+        <block>192.168.2.193/001208/0x88block</block>
+      </file>
+    </property>
+    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="000000">192.168.2.193/001208/0x8A</value>
+        <block>192.168.2.193/001208/0x8Ablock</block>
+      </file>
+    </property>
+    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+      <file>
+        <value default="2f">192.168.2.193/001208/0xE0</value>
+        <block>192.168.2.193/001208/0xE0block</block>
+      </file>
+    </property>
+  </object>
+</device>
