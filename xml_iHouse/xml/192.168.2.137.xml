@@ -1,80 +1,76 @@
-<device>
-  <profile>
-    <updater interval="30000">
-      <class>humming.sample.SampleNotifyInstanceListUpdater</class>
-    </updater>
-  </profile>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><device>
+  
   <object ceoj="0022">
-    <property epc="80" get="enabled" set="enabled" notify="enabled">
+    <property epc="80" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="30">192.168.2.137/002201/0x80</value>
         <notify>192.168.2.137/002201/0x80notify</notify>
         <block>192.168.2.137/002201/0x80block</block>
       </file>
     </property>
-    <property epc="81" get="enabled" set="enabled" notify="enabled">
+    <property epc="81" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="00">192.168.2.137/002201/0x81</value>
         <notify>192.168.2.137/002201/0x81notify</notify>
         <block>192.168.2.137/002201/0x81block</block>
       </file>
     </property>
-    <property epc="82" get="enabled" set="disabled" notify="disabled">
+    <property epc="82" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="032a6100">192.168.2.137/002201/0x82</value>
         <block>192.168.2.137/002201/0x82block</block>
       </file>
     </property>
-    <property epc="88" get="enabled" set="disabled" notify="enabled">
+    <property epc="88" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.137/002201/0x88</value>
         <notify>192.168.2.137/002201/0x88notify</notify>
         <block>192.168.2.137/002201/0x88block</block>
       </file>
     </property>
-    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+    <property epc="8A" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="00002c">192.168.2.137/002201/0x8A</value>
         <block>192.168.2.137/002201/0x8Ablock</block>
       </file>
     </property>
-    <property epc="97" get="enabled" set="enabled" notify="disabled">
+    <property epc="97" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="010a">192.168.2.137/002201/0x97</value>
         <block>192.168.2.137/002201/0x97block</block>
       </file>
     </property>
-    <property epc="98" get="enabled" set="enabled" notify="disabled">
+    <property epc="98" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="07d00103">192.168.2.137/002201/0x98</value>
         <block>192.168.2.137/002201/0x98block</block>
       </file>
     </property>
-    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+    <property epc="E0" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000004a4">192.168.2.137/002201/0xE0</value>
         <block>192.168.2.137/002201/0xE0block</block>
       </file>
     </property>
-    <property epc="E2" get="enabled" set="disabled" notify="disabled">
+    <property epc="E2" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002201/0xE2</value>
         <block>192.168.2.137/002201/0xE2block</block>
       </file>
     </property>
-    <property epc="E4" get="enabled" set="disabled" notify="disabled">
+    <property epc="E4" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">192.168.2.137/002201/0xE4</value>
         <block>192.168.2.137/002201/0xE4block</block>
       </file>
     </property>
-    <property epc="E5" get="enabled" set="disabled" notify="disabled">
+    <property epc="E5" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0068">192.168.2.137/002201/0xE5</value>
         <block>192.168.2.137/002201/0xE5block</block>
       </file>
     </property>
-    <property epc="F1" get="enabled" set="disabled" notify="disabled">
+    <property epc="F1" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002201/0xF1</value>
         <block>192.168.2.137/002201/0xF1block</block>
@@ -82,76 +78,76 @@
     </property>
   </object>
   <object ceoj="0022">
-    <property epc="80" get="enabled" set="enabled" notify="enabled">
+    <property epc="80" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="30">192.168.2.137/002202/0x80</value>
         <notify>192.168.2.137/002202/0x80notify</notify>
         <block>192.168.2.137/002202/0x80block</block>
       </file>
     </property>
-    <property epc="81" get="enabled" set="enabled" notify="enabled">
+    <property epc="81" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="00">192.168.2.137/002202/0x81</value>
         <notify>192.168.2.137/002202/0x81notify</notify>
         <block>192.168.2.137/002202/0x81block</block>
       </file>
     </property>
-    <property epc="82" get="enabled" set="disabled" notify="disabled">
+    <property epc="82" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="032a6100">192.168.2.137/002202/0x82</value>
         <block>192.168.2.137/002202/0x82block</block>
       </file>
     </property>
-    <property epc="88" get="enabled" set="disabled" notify="enabled">
+    <property epc="88" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.137/002202/0x88</value>
         <notify>192.168.2.137/002202/0x88notify</notify>
         <block>192.168.2.137/002202/0x88block</block>
       </file>
     </property>
-    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+    <property epc="8A" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="00002c">192.168.2.137/002202/0x8A</value>
         <block>192.168.2.137/002202/0x8Ablock</block>
       </file>
     </property>
-    <property epc="97" get="enabled" set="enabled" notify="disabled">
+    <property epc="97" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="010a">192.168.2.137/002202/0x97</value>
         <block>192.168.2.137/002202/0x97block</block>
       </file>
     </property>
-    <property epc="98" get="enabled" set="enabled" notify="disabled">
+    <property epc="98" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="07d00103">192.168.2.137/002202/0x98</value>
         <block>192.168.2.137/002202/0x98block</block>
       </file>
     </property>
-    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+    <property epc="E0" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0100463d">192.168.2.137/002202/0xE0</value>
         <block>192.168.2.137/002202/0xE0block</block>
       </file>
     </property>
-    <property epc="E2" get="enabled" set="disabled" notify="disabled">
+    <property epc="E2" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002202/0xE2</value>
         <block>192.168.2.137/002202/0xE2block</block>
       </file>
     </property>
-    <property epc="E4" get="enabled" set="disabled" notify="disabled">
+    <property epc="E4" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000">192.168.2.137/002202/0xE4</value>
         <block>192.168.2.137/002202/0xE4block</block>
       </file>
     </property>
-    <property epc="E5" get="enabled" set="disabled" notify="disabled">
+    <property epc="E5" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0067">192.168.2.137/002202/0xE5</value>
         <block>192.168.2.137/002202/0xE5block</block>
       </file>
     </property>
-    <property epc="F1" get="enabled" set="disabled" notify="disabled">
+    <property epc="F1" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002202/0xF1</value>
         <block>192.168.2.137/002202/0xF1block</block>
@@ -159,76 +155,76 @@
     </property>
   </object>
   <object ceoj="0022">
-    <property epc="80" get="enabled" set="enabled" notify="enabled">
+    <property epc="80" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="30">192.168.2.137/002203/0x80</value>
         <notify>192.168.2.137/002203/0x80notify</notify>
         <block>192.168.2.137/002203/0x80block</block>
       </file>
     </property>
-    <property epc="81" get="enabled" set="enabled" notify="enabled">
+    <property epc="81" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="00">192.168.2.137/002203/0x81</value>
         <notify>192.168.2.137/002203/0x81notify</notify>
         <block>192.168.2.137/002203/0x81block</block>
       </file>
     </property>
-    <property epc="82" get="enabled" set="disabled" notify="disabled">
+    <property epc="82" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="032a6100">192.168.2.137/002203/0x82</value>
         <block>192.168.2.137/002203/0x82block</block>
       </file>
     </property>
-    <property epc="88" get="enabled" set="disabled" notify="enabled">
+    <property epc="88" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.137/002203/0x88</value>
         <notify>192.168.2.137/002203/0x88notify</notify>
         <block>192.168.2.137/002203/0x88block</block>
       </file>
     </property>
-    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+    <property epc="8A" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="00002c">192.168.2.137/002203/0x8A</value>
         <block>192.168.2.137/002203/0x8Ablock</block>
       </file>
     </property>
-    <property epc="97" get="enabled" set="enabled" notify="disabled">
+    <property epc="97" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="010a">192.168.2.137/002203/0x97</value>
         <block>192.168.2.137/002203/0x97block</block>
       </file>
     </property>
-    <property epc="98" get="enabled" set="enabled" notify="disabled">
+    <property epc="98" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="07d00103">192.168.2.137/002203/0x98</value>
         <block>192.168.2.137/002203/0x98block</block>
       </file>
     </property>
-    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+    <property epc="E0" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000009c">192.168.2.137/002203/0xE0</value>
         <block>192.168.2.137/002203/0xE0block</block>
       </file>
     </property>
-    <property epc="E2" get="enabled" set="disabled" notify="disabled">
+    <property epc="E2" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002203/0xE2</value>
         <block>192.168.2.137/002203/0xE2block</block>
       </file>
     </property>
-    <property epc="E4" get="enabled" set="disabled" notify="disabled">
+    <property epc="E4" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">192.168.2.137/002203/0xE4</value>
         <block>192.168.2.137/002203/0xE4block</block>
       </file>
     </property>
-    <property epc="E5" get="enabled" set="disabled" notify="disabled">
+    <property epc="E5" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0067">192.168.2.137/002203/0xE5</value>
         <block>192.168.2.137/002203/0xE5block</block>
       </file>
     </property>
-    <property epc="F1" get="enabled" set="disabled" notify="disabled">
+    <property epc="F1" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002203/0xF1</value>
         <block>192.168.2.137/002203/0xF1block</block>
@@ -236,76 +232,76 @@
     </property>
   </object>
   <object ceoj="0022">
-    <property epc="80" get="enabled" set="enabled" notify="enabled">
+    <property epc="80" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="30">192.168.2.137/002204/0x80</value>
         <notify>192.168.2.137/002204/0x80notify</notify>
         <block>192.168.2.137/002204/0x80block</block>
       </file>
     </property>
-    <property epc="81" get="enabled" set="enabled" notify="enabled">
+    <property epc="81" get="enabled" notify="enabled" set="enabled">
       <file>
         <value default="00">192.168.2.137/002204/0x81</value>
         <notify>192.168.2.137/002204/0x81notify</notify>
         <block>192.168.2.137/002204/0x81block</block>
       </file>
     </property>
-    <property epc="82" get="enabled" set="disabled" notify="disabled">
+    <property epc="82" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="032a6100">192.168.2.137/002204/0x82</value>
         <block>192.168.2.137/002204/0x82block</block>
       </file>
     </property>
-    <property epc="88" get="enabled" set="disabled" notify="enabled">
+    <property epc="88" get="enabled" notify="enabled" set="disabled">
       <file>
         <value default="42">192.168.2.137/002204/0x88</value>
         <notify>192.168.2.137/002204/0x88notify</notify>
         <block>192.168.2.137/002204/0x88block</block>
       </file>
     </property>
-    <property epc="8A" get="enabled" set="disabled" notify="disabled">
+    <property epc="8A" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="00002c">192.168.2.137/002204/0x8A</value>
         <block>192.168.2.137/002204/0x8Ablock</block>
       </file>
     </property>
-    <property epc="97" get="enabled" set="enabled" notify="disabled">
+    <property epc="97" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="010b">192.168.2.137/002204/0x97</value>
         <block>192.168.2.137/002204/0x97block</block>
       </file>
     </property>
-    <property epc="98" get="enabled" set="enabled" notify="disabled">
+    <property epc="98" get="enabled" notify="disabled" set="enabled">
       <file>
         <value default="07d00103">192.168.2.137/002204/0x98</value>
         <block>192.168.2.137/002204/0x98block</block>
       </file>
     </property>
-    <property epc="E0" get="enabled" set="disabled" notify="disabled">
+    <property epc="E0" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000360e">192.168.2.137/002204/0xE0</value>
         <block>192.168.2.137/002204/0xE0block</block>
       </file>
     </property>
-    <property epc="E2" get="enabled" set="disabled" notify="disabled">
+    <property epc="E2" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002204/0xE2</value>
         <block>192.168.2.137/002204/0xE2block</block>
       </file>
     </property>
-    <property epc="E4" get="enabled" set="disabled" notify="disabled">
+    <property epc="E4" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000000000000000000000">192.168.2.137/002204/0xE4</value>
         <block>192.168.2.137/002204/0xE4block</block>
       </file>
     </property>
-    <property epc="E5" get="enabled" set="disabled" notify="disabled">
+    <property epc="E5" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0067">192.168.2.137/002204/0xE5</value>
         <block>192.168.2.137/002204/0xE5block</block>
       </file>
     </property>
-    <property epc="F1" get="enabled" set="disabled" notify="disabled">
+    <property epc="F1" get="enabled" notify="disabled" set="disabled">
       <file>
         <value default="0000">192.168.2.137/002204/0xF1</value>
         <block>192.168.2.137/002204/0xF1block</block>
