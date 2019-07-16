@@ -2,6 +2,3 @@
 
  java -jar NoObserve.jar -i lan0 &
  #java -jar Observe.jar -i lan0
-
- timeout 86400 sudo tcpdump -i lan0 -w NoObserve.pcap
- #timeout 86400 sudo tcpdump -i lan0 -w Observe.pcap
